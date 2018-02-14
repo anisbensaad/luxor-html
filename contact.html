@@ -1,0 +1,353 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser.</p>
+<![endif]-->
+
+<div class="container-fluid">
+    <div class="row m-0">
+        <aside class="col-lg-1 bg-light sidebar d-md-block">
+            <img class="d-block logo" src="img/LUXOR_Logo.png" alt="Luxor Logo" title="Luxo Logo">
+            <div class="menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a href="#" class="arrow_forward"></a>
+
+        </aside>
+        <main role="main" class="col-lg-11 p-0">
+            <section class="section_map">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5 m-0 colmap">
+                            <div id="map"></div>
+                            <div class="black_bg_c">
+                                <div class="request">
+                                    <a href="#">HAVE A REQUEST FOR FEEDBACK? </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 m-0 p-0">
+                            <div class="black_bg">
+                                <div class="black_bg_content">
+                                    <h1>CONTACT</h1>
+                                    <p>Lot n°88 EL M'ghira,B.P:180, 2082 Fouchana, Ben Arous, Tunisie</p>
+                                    <ul>
+                                        <li>Directeur technique et commercial: (+216) 98 760 888</li>
+                                        <li>Responsable des Adjuvants et des Fibres: (+216) 99 890 989</li>
+                                        <li>Responsable des Monocouches et mortiers spéciaux: (+216) 99 890 489</li>
+                                        <li>Responsable des produits et réparation et de protection (sol et façades): (+216) 99 891 888</li>
+                                        <li>Responsable des agents de mouture: (+216) 99 891 800</li>
+                                        <li>Tél. :(+216) 71 409 820 (+216) 25900163 (+216)27400430</li>
+                                        <li>Fax: (+216) 71409818</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+            <section class="contact_2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7 m-0">
+                            <div class="back_top">
+                                <a href="#">RETURN TO TOP</a>
+                            </div>
+                            <div class="black_bg">
+                                <div class="contact-form">
+                                    <h3>CONTACT FORM</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tincidunt ut laoreet dolore magna aliquam erat volutpat.  consectetuer adipiscing elit, sed diam nonummy tincidunt</p>
+                                    <form>
+                                        <input type="text" name="Name" placeholder="NAME" class="field">
+                                        <input type="text" name="email" placeholder="EMAIL" class="field">
+                                        <input type="text" name="phone" placeholder="PHONE" class="field">
+                                        <input type="text" name="comment" placeholder="COMMENT" class="field">
+                                        <div>
+                                            <input type="checkbox"  name="agree" value="agree">
+                                            <label for="agree">I agree with processing my personal data</label>
+                                        </div>
+                                        <input type="submit" value="SEND" class="submit">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 m-0 p-0">
+                            <img src="img/lg_contact.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container-fluid footer">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="rights">© WE ARE <strong>LUXOR</strong> ALL RIGHTS RESERVED. 2018</div>
+                            <div class="follow">
+                                <span class="follow_us">Follow Us</span>
+                                <img src="img/social-facebook.png" class="social">
+                                <img src="img/instagram.png" class="social">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+
+<script type="text/javascript">
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+</script>
+<script>
+    function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 36.7153147, lng: 10.1618767},
+            zoom: 15,
+            styles: [
+                                 
+                      {
+                        "elementType": "geometry",
+                        "stylers": [
+                          {
+                            "color": "#f5f5f5"
+                          }
+                        ]
+                      },
+                      {
+                        "elementType": "labels.icon",
+                        "stylers": [
+                          {
+                            "visibility": "off"
+                          }
+                        ]
+                      },
+                      {
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                          {
+                            "color": "#616161"
+                          }
+                        ]
+                      },
+                      {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                          {
+                            "color": "#f5f5f5"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                          {
+                            "color": "#bdbdbd"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "landscape.man_made",
+                        "stylers": [
+                          {
+                            "color": "#d8d8d8"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                          {
+                            "color": "#eeeeee"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                          {
+                            "color": "#757575"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "poi.business",
+                        "stylers": [
+                          {
+                            "visibility": "on"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "poi.business",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                          {
+                            "visibility": "on"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "poi.government",
+                        "stylers": [
+                          {
+                            "visibility": "on"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "poi.medical",
+                        "stylers": [
+                          {
+                            "visibility": "on"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                          {
+                            "color": "#e5e5e5"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                          {
+                            "color": "#9e9e9e"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [
+                          {
+                            "color": "#ffffff"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                          {
+                            "color": "#ffffff"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                          {
+                            "color": "#757575"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                          {
+                            "color": "#c0c0c0"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                          {
+                            "color": "#616161"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                          {
+                            "color": "#9e9e9e"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "transit.line",
+                        "elementType": "geometry",
+                        "stylers": [
+                          {
+                            "color": "#e5e5e5"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "transit.station",
+                        "elementType": "geometry",
+                        "stylers": [
+                          {
+                            "color": "#eeeeee"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                          {
+                            "color": "#c9c9c9"
+                          }
+                        ]
+                      },
+                      {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                          {
+                            "color": "#9e9e9e"
+                          }
+                        ]
+                      }
+
+            ]
+        });
+        var marker = new google.maps.Marker({
+            position: {lat: 36.7153147, lng: 10.1618767},
+            map: map,
+            title: 'Luxor'
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2MKLUW5zCu_1z89lTrq9bt-3uRvsuGQE&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
