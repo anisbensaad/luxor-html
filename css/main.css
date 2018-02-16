@@ -44,6 +44,61 @@ main{
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
+.full_page_nav{
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    background: black;
+    z-index: 10000;
+    height: 100vh;
+    display: block;
+    padding: 6% 6% 0% 6%;
+    color: white;
+    overflow: hidden;
+}
+.navigation{
+    margin-bottom: 6%;
+}
+.full_page_nav .menu-footer{
+    color: white;
+    padding:0;
+    background: none;
+    margin: 0;
+}
+.full_page_nav footer{
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+}
+nav h1{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: futura;
+    color: #ffffff;
+    line-height: 41px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.menu-block{
+    text-align: center;
+}
+.menu-block a {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0;
+    font-family: futura;
+    display: block;
+    text-transform: uppercase;
+}
+.full_page_nav p{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 29px;
+    letter-spacing: 0;
+    font-family: Helvetica-Neue;
+}
 .container-fluid {
     overflow-x: hidden;
     padding-left: 0;
@@ -58,7 +113,9 @@ main{
     padding: 0;
     width: 9.3%;
 }
-
+.menu-block2{
+    margin-top: 6%;
+}
 .logo{
     max-width: 70%;
     margin-top: 5vh;
@@ -674,6 +731,9 @@ p{
 /* RESPONSIVE
 /*------------------------------------------------------*/
 @media (max-width: 1400px) {
+    nav h1{
+        font-size: 28px;
+    }
     .bloc_2 h2{
         font-size: 30px;
 
@@ -733,9 +793,9 @@ p{
 /*---------- Medium----------*/
 @media (max-width: 991px) {
      h1 {
-        font-size: 32px !important;
-        line-height: 28px !important;
-        margin-bottom: 10px !important;
+        font-size: 32px ;
+        line-height: 28px ;
+        margin-bottom: 10px ;
     }
     h2{
         font-size: 24px;
@@ -785,6 +845,13 @@ p{
             margin-top: 20px;
     margin-bottom: 20px;
     line-height: 20px;
+    }
+    .request a {
+        display: block;
+        margin-left: 20px;
+    }
+    .full_page_nav{
+        margin-left: 8px;
     }
 }
 
@@ -844,6 +911,35 @@ p{
     .presentation{
         width: 100%;
     }
+    .contact_2 img{
+        display: none;
+    }
+    .black_bg_c{
+        width: 50%;
+        top: -35px;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    #map{
+        margin-top: 0px;
+        height: 300px;
+        width: 100%;
+    }
+    .section_map .black_bg_content{
+        margin-bottom: 20px;
+    }
+
+    nav h1{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .full_page_nav{
+        padding: 2% 2% 0% 2%;
+    }
+    .full_page_nav p{
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
 
 
@@ -873,4 +969,38 @@ p{
         margin: 40px 20px;
         vertical-align: middle;
     }
+    .rights{
+        font-size: 10px;
+    }
+    .full_page_nav p{
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
+
+
+/** Responsive Layout **/
+@media (min-width: 992px) {
+  .col-md-1-5 { width: 20%; }
+  .col-md-2-5 { width: 40%; }
+  .col-md-3-5 { width: 60%; }
+  .col-md-4-5 { width: 80%; }
+  .col-md-5-5 { width: 100%; }
+}
+@media (min-width: 1200px) {
+  .col-lg-1-5 { width: 20%; }
+  .col-lg-2-5 { width: 40%; }
+  .col-lg-3-5 { width: 60%; }
+  .col-lg-4-5 { width: 80%; }
+  .col-lg-5-5 { width: 100%; }
+}
+@media (min-width: 768px) {
+  .col-sm-1-5 { width: 20%; }
+  .col-sm-2-5 { width: 40%; }
+  .col-sm-3-5 { width: 60%; }
+  .col-sm-4-5 { width: 80%; }
+  .col-sm-5-5 { width: 100%; }
+}
+
+
+
